@@ -1,2 +1,3 @@
 # homeserver
-Home server project
+My Home Server Project.
+

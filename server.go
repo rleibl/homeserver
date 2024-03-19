@@ -13,8 +13,11 @@ func handleDefault(c *gin.Context) {
 
 func main() {
 	r := gin.Default()
+	gin.SetMode(gin.DebugMode)
+	//gin.SetMode(gin.ReleaseMode)
 
 	r.LoadHTMLGlob("templates/*")
+	r.Static("/assets", "./assets")
 
 	r.GET("/", handleDefault)
 
