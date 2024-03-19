@@ -1,0 +1,12 @@
+[Unit]
+Description=Homeserver
+After=network.target
+
+[Service]
+WorkingDirectory=/srv/homeserver
+ExecStart=/srv/homeserver/homeserver
+Type=Notify
+Restart=Always
+
+[Install]
+WantedBy=default.target
